@@ -1,0 +1,74 @@
+
+🚗 Desafio: Sistema de Gerenciamento de Locadora de Veículos
+💡 Contexto:
+Você foi contratado para desenvolver um sistema simples para uma locadora de veículos. O sistema precisa controlar o cadastro de veículos,
+clientes, aluguéis e gerar relatórios simples.
+
+🎯 Objetivos do projeto:
+Cadastrar veículos de diferentes tipos (Carro, Moto, Caminhão).
+
+Cadastrar clientes com informações pessoais.
+
+Registrar aluguéis com data de início e fim.
+
+Calcular o valor total do aluguel com base no tipo de veículo e número de dias.
+
+Exibir relatórios simples de aluguéis ativos, veículos disponíveis e histórico de aluguéis de um cliente.
+
+🧱 Estrutura sugerida:
+📦 Pacote: model
+Veiculo (classe abstrata)
+
+Atributos: placa, marca, modelo, ano, valorDiaria
+
+Método abstrato: calcularDiaria(int dias)
+
+Carro, Moto, Caminhao (herdam de Veiculo)
+
+Cliente
+
+Atributos: nome, CPF, telefone
+
+Aluguel
+
+Atributos: cliente, veiculo, dataInicio, dataFim
+
+Método: calcularValorTotal()
+
+📦 Pacote: service
+LocadoraService
+
+Métodos:
+
+cadastrarVeiculo(Veiculo)
+
+cadastrarCliente(Cliente)
+
+alugarVeiculo(String placa, String cpf, LocalDate dataInicio, LocalDate dataFim)
+
+listarAlugueisAtivos()
+
+listarVeiculosDisponiveis()
+
+listarHistoricoCliente(String cpf)
+
+🧪 Extras (nível intermediário):
+Usar uma ArrayList para armazenar dados em memória.
+
+Validar se o veículo está disponível na data do aluguel.
+
+Impedir que um cliente alugue dois veículos no mesmo período.
+
+Criar um menu em terminal para interagir com o sistema.
+
+📘 O que você vai aprender:
+Uso de classes abstratas e interfaces
+
+Herança e polimorfismo
+
+Encapsulamento de dados
+
+Relacionamentos entre objetos (composição)
+
+Boas práticas de modelagem OOP
+
