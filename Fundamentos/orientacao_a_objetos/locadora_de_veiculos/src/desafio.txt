@@ -21,7 +21,7 @@ Veiculo (classe abstrata)
 
 Atributos: placa, marca, modelo, ano, valorDiaria
 
-Método abstrato: calcularDiaria(int dias)
+Método abstrato:(int dias)
 
 Carro, Moto, Caminhao (herdam de Veiculo)
 
